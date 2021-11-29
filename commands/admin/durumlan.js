@@ -9,7 +9,7 @@ module.exports = class DurumlanıyoruzCommand extends Command {
             name: 'durumlan',
             group: 'admin',
             memberName: 'durumlan',
-            description: 'Botun oynuyor kısmını değiştirirsiniz.',
+            description: 'listening',
  			throttling: {
                 usages: 3,
                 duration: 5
@@ -17,7 +17,7 @@ module.exports = class DurumlanıyoruzCommand extends Command {
 			args: [
 				{
 					key: 'text',
-					prompt: 'Durum ne olsun?',
+					prompt: 'tuvalet deliğini',
 					type: 'string'
 				}
 			]
@@ -34,6 +34,6 @@ module.exports = class DurumlanıyoruzCommand extends Command {
 		
         console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] ${msg.author.tag} (${msg.author.id}) UUID F4WA-. - ${msg.guild.name}\n`);
 
-        msg.channel.send("Yaptım ağam!");
+        msg.channel.send("Oka");
     }
 };
